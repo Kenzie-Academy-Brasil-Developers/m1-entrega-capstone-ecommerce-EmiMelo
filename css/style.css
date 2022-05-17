@@ -31,6 +31,7 @@ body {
 
     display: flex;
     gap: 20px;
+    transition: .5s;
 }
 
 ul{
@@ -45,6 +46,7 @@ ul{
 a {
     text-decoration: none;
     color: #242424;
+    transition: .5s;
 }
 
 a:hover {
@@ -78,6 +80,7 @@ a:hover {
     justify-content: center;
     flex-direction: inherit;
     background-color: #F5F5F5;
+    overflow: hidden;
 }
 
 img {
@@ -86,12 +89,16 @@ img {
     height: 140px;
 }
 
+.img-product:hover {
+    transform: scale(1.1);
+}
+
 .details {
     padding: 10px;
     background-color: #FFFFFF;
 }
 
-h3, h4, h5, p {
+h3, .category, .price, p {
     margin-bottom: 15px;
     align-items: center;
 }
@@ -115,10 +122,9 @@ p {
     font-size: 14px;
 }
 
-h5 {
+.price, .price-carrinho {
     color: #2E245E;
     font-weight: 600;
-    font-size: 14px;
 }
 
 button {
@@ -127,11 +133,13 @@ button {
     border-style: none;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .btn-add:hover, .btn-carrinho:hover {
     color: #2E245E;
     text-decoration: underline  #2E245E;
+
 }
 
 section {
@@ -160,6 +168,12 @@ section {
     background-color: #37268C;
     padding: 15px;
     color: #FFFFFF;
+    transition: .5s;
+}
+
+
+.btn-pesquisa:hover {
+    background-color: #2E245E;
 }
 
 .container-carrinho {
