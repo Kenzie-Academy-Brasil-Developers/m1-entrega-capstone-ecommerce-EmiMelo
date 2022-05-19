@@ -30,72 +30,7 @@
         </div>
     </header>
     <div class="container">
-        <main class="products-content">
-            <ul class="ul">
-                <li class="product">
-                    <img src="./img/camiseta_preta.svg" class="img-product">
-                    <div class="details">
-                        <div class="category">Camisetas</div>
-                        <h3>Black T-Shirt</h3>
-                        <p>Adicione um pouco de energia ao seu guarda-roupa de inverno com esta camisera preta
-                            vibrante...</p>
-                        <p class="price">R$ 100.00</p>
-                        <button class="btn-add">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-                <li class="product">
-                    <img src="./img/gorro.svg" class="img-product">
-                    <div class="details">
-                        <div class="category">Acessórios</div>
-                        <h3>Black Hat</h3>
-                        <p>O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...</p>
-                        <p class="price">R$ 100.00</p>
-                        <button class="btn-add">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-                <li class="product">
-                    <img src="./img/mascara.svg" class="img-product">
-                    <div class="details">
-                        <div class="category">Acessórios</div>
-                        <h3>Mask</h3>
-                        <p>Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...
-                        </p>
-                        <p class="price">R$ 100.00</p>
-                        <button class="btn-add">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-                <li class="product">
-                    <img src="./img/camiseta_branca.svg" class="img-product">
-                    <div class="details">
-                        <div class="category">Camisetas</div>
-                        <h3>White T-Shirt</h3>
-                        <p>Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais fino...</p>
-                        <p class="price">R$ 100.00</p>
-                        <button class="btn-add">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-                <li class="product">
-                    <img src="./img/jaqueta.svg" class="img-product">
-                    <div class="details">
-                        <div class="category">Camisetas</div>
-                        <h3>Champion Packable Jacket</h3>
-                        <p>Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...</p>
-                        <p class="price">R$ 100.00</p>
-                        <button class="btn-add">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-                <li class="product">
-                    <img src="./img/moletom.svg" class="img-product"> 
-                    <div class="details">
-                        <div class="category">Camisetas</div>
-                        <h3>Moletom</h3>
-                        <p>Este moletom é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</p>
-                        <p class="price">R$ 100.00</p>
-                        <button class="btn-add">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-            </ul>
-        </main>
+        <main class="products-content"></main>
         <section>
             <div class="container-pesquisa">
                 <input type="text" id="text" placeholder="Digite aqui sua pesquisa">
@@ -103,54 +38,14 @@
             </div>
             <div class="container-carrinho">
                 <h2>Carrinho de compras</h2>
-                <ul class="ul-carrinho">
-                    <li class="list-carrinho" id="list-carrinho1">
-                        <img src="./img/moletom.svg" class="img-carrinho">
-                        <div class="details-carrinho">
-                            <h3 class="product-carrinho">Moletom</h3>
-                            <p class="price-carrinho">R$ 100.00</p>
-                            <button class="btn-carrinho">Remover produto</button>
-                        </div>
-                    </li>
-                    <li class="list-carrinho">
-                        <img src="./img/mascara.svg" class="img-carrinho">
-                        <div class="details-carrinho">
-                            <h3 class="product-carrinho">Mask</h3>
-                            <p class="price-carrinho">R$ 100.00</p>
-                            <button class="btn-carrinho">Remover produto</button>
-                        </div>
-                    </li>
-                    <li class="list-carrinho">
-                        <img src="./img/camiseta_branca.svg" class="img-carrinho">
-                        <div class="details-carrinho">
-                            <h3 class="product-carrinho">White T-Shirt</h3>
-                            <p class="price-carrinho">R$ 100.00</p>
-                            <button class="btn-carrinho">Remover produto</button>
-                        </div>
-                    </li>
-                    <li class="list-carrinho">
-                        <img src="./img/gorro.svg" class="img-carrinho">
-                        <div class="details-carrinho">
-                            <h3 class="product-carrinho">Black Hat</h3>
-                            <p class="price-carrinho">R$ 100.00</p>
-                            <button class="btn-carrinho">Remover produto</button>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="ul-total">
-                    <li class="li-total">
-                        <h3 class="h3">Quantidade:</h3>
-                        <p class="p">4</p>
-                    </li>
-                    <li class="li-total">
-                        <h3 class="h3">Total:</h3>
-                        <p class="p">R$ 400.00</p>
-                    </li>
-                </ul>
+                <div id="divCarrinho"></div>
+                <ul class="ul-carrinho"></ul>
+                <ul class="ul-total"></ul>
             </div>
         </section>
     </div>
 
+    <script src="./js/database.js"></script>
     <script src="./js/index.js"></script>
 </body>
 
